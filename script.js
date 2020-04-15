@@ -5,7 +5,7 @@ let currentRoundNumber = 1;
 // Write your code below:
 
 let generateTarget = () =>{
-    return Math.floor(Math.random() * 9);
+    return Math.floor(Math.random() * 10);
 };
 let compareGuesses = (humanGuess,computerGuess,secretTargetNumber) =>{
     let human = Math.abs(secretTargetNumber - humanGuess);
@@ -21,4 +21,6 @@ let updateScore = (winner) =>{
         compareGuesses++
     }
 }
+
+const advancedRound = () => currentRoundNumber++
 
